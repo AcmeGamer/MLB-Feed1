@@ -11,6 +11,24 @@ client.on('message', msg => {
   }
 });
 
+client.on('message', msg => {
+  if (msg.content === 'ping') {
+    msg.reply('pong');
+  }
+});
+
+client.on('message', msg => {
+  if (msg.content === 'Hi there'||'hi there') {
+    msg.reply('How are you');
+  }
+});
+
+client.on('message', msg => {
+  if (msg.content === 'I\'m fine'||'I am fine.') {
+    msg.reply('Glad to hear ^^');
+  }
+});
+
 /*client.on('message', msg => {
   if (msg.content === 'boop' || 'Boop') {
     msg.reply('Boops back, ^^');
