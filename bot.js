@@ -7,17 +7,19 @@ client.on('ready', () => {
 
 client.on('message', msg => {
   if (msg.content === 'Hoi') {
-    msg.reply('Hi there! :;D'); };
-  
+    msg.reply('Hi there! :D'); 
+});
+/*  
   if (msg.content === 'ping') {
-    msg.reply('pong');};
+    msg.reply('pong');}
 	 
   if (msg.content === 'Hi there'||'hi there') {
-    msg.reply('How are you');};
+    msg.reply('How are you');}
 	
   if (msg.content === 'I\'m fine'||'I am fine.') {
-    msg.reply('Glad to hear ^^');};
-});
+    msg.reply('Glad to hear ^^')
+  
+  });
 /*
 client.on('message', msg => {
   if (msg.content === 'ping') {
