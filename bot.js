@@ -5,10 +5,10 @@ client.on('ready', () => {
 	console.log('I am ready!');
 });
 
-client.on('message', message => {
-	if (messgage.content === 'ping') {
-		message.reply('pong');
-	}
+client.on('message', msg => {
+  if (msg.content === 'Hoi') {
+    msg.reply('Hi there! :D');
+  }
 });
 
 client.login(process.env.BOT_TOKEN);
