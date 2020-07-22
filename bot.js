@@ -16,11 +16,6 @@ var request = require('request');
 
 console.log("Hello World! I am a twitter bot!");
 
-var secret = {
-client_secret: 'IU2nhDwPrrc3SyNcrGPSsc-QxY_HqlgI',
-access_token_key: 'NzM0OTc4NzUyMzkxNTQ0ODMy.Xxf-lQ.cgciDUWAxLRmuP2E1pYwwsVxZy8',
-}
-
 var Twitter = new TwitterPackage(secret);
 
 //Twitter stream
