@@ -11,6 +11,7 @@ client.on('message', msg => {
   }
 });
 	
+/*
 var TwitterPackage = require('twitter');
 var request = require('request');
 
@@ -33,5 +34,5 @@ stream.on('error', function(error) {
 console.log(error);
 });
 });
-
+*/
 client.login(process.env.BOT_TOKEN);
