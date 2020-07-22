@@ -11,11 +11,11 @@ client.on('message', msg => {
   }
 });
 
-client.on('message', msg => {
+/*client.on('message', msg => {
   if (msg.content === 'boop' || 'Boop') {
     msg.reply('Boops back, ^^');
   }
-});
+});*/
 
 
 client.login(process.env.BOT_TOKEN);
