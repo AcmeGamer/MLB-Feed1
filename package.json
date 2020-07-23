@@ -5,14 +5,12 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
+    "token": "insert-bot-token-here",
+    "prefix": ">"
   },
   "author": "Acme Gamers",
   "license": "ISC",
   "dependencies": {
     "discord.js": "^12.2.0"
-  },
-  {
-  "token": "insert-bot-token-here",
-  "prefix": "!"
-}
+  }
 }
