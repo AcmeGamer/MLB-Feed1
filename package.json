@@ -4,9 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "token": "insert-bot-token-here",
-    "prefix": ">"
+    "start": "node index.js"
   },
   "author": "Acme Gamers",
   "license": "ISC",
