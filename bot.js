@@ -1,38 +1,19 @@
 const Discord = require ('discord.js');
 const client = new Discord.Client();
 
-client.on('ready', () => {
-	console.log('I am ready!');
-});
 
-client.on('message', msg => {
-  if (msg.content === 'Hoi') {
-    msg.reply('Hi there! :D')
+// Set the prefix
+const prefix = ">";
+client.on("message", (message) => {
+  // Exit and stop if it's not there
+  if (!message.content.startsWith(prefix)) return;
+ 
+  if (message.content.startsWith(prefix + "ping")) {
+    message.channel.send("pong!");
+  } else
+  if (message.content.startsWith(prefix + "Hoi")) {
+    message.channel.send("Hello :D");
   }
 });
-	
-/*
-var TwitterPackage = require('twitter');
-var request = require('request');
 
-console.log("Hello World! I am a twitter bot!");
-
-var Twitter = new TwitterPackage(secret);
-
-//Twitter stream
-var hashtag = '#brexit'; //put any hashtag to listen e.g. #brexit
-console.log('Listening to:' + hashtag);
-
-Twitter.stream('statuses/filter', {track: hashtag}, function(stream) {
-stream.on('data', function(tweet) {
-console.log('Tweet:@' + tweet.user.screen_name + 
-'\t' + tweet.text);
-console.log('------') 
-});
-
-stream.on('error', function(error) {
-console.log(error);
-});
-});
-*/
 client.login(process.env.BOT_TOKEN);
